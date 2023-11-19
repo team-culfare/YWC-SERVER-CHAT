@@ -8,7 +8,7 @@ load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/chatbot', methods=['POST'])
+@app.route('/message', methods=['POST'])
 def chatbot():
     if request.method == 'POST':
         messages = request.get_json()
